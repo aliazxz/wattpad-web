@@ -1,10 +1,42 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Tahoma', Arial, sans-serif;
     background: #f5f5f5;
-    text-align: right; /* للدعم الكامل للغة العربية */
+    color: #333;
+    padding: 20px;
+    transition: all 0.3s ease;
 }
+
+body.dark-mode {
+    background: #222;
+    color: #fff;
+}
+
+header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
 #stories-list {
     display: grid;
-    gap: 1rem;
-    padding: 1rem;
+    gap: 20px;
+}
+
+.story {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.dark-mode .story {
+    background: #333;
+}
+
+button {
+    padding: 8px 16px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
